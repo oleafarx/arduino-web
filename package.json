@@ -1,17 +1,26 @@
 {
-  "name": "server",
+  "name": "arduino-web",
   "version": "1.0.0",
-  "description": "",
+  "description": "Web montada en un servidor express que recibe y muestra los datos recopilados por unos sensores conectados a un Arduino.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleafarx/arduino-web.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oleafarx/arduino-web/issues"
+  },
+  "homepage": "https://github.com/oleafarx/arduino-web#readme",
   "dependencies": {
-    "express": "^4.16.2",
-    "serialport": "^6.0.4",
-    "socket.io": "^2.0.4"
+    "express": "^4.18.1",
+    "http": "0.0.1-security",
+    "serialport": "^10.4.0",
+    "socket.io": "^4.5.1"
   }
 }

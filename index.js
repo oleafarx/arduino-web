@@ -6,7 +6,6 @@ const server = http.createServer(app);
 const io = new Server(server);
 
 app.use(express.static(__dirname + '/public'));
-server.listen(5500, () => console.log('server on port 5500'));
 
 const { SerialPort, ReadlineParser } = require('serialport');
 
@@ -31,3 +30,5 @@ parser.on('data', function (data) {
 
 parser.on('error', (err) => console.log(err));
 port.on('error', (err) => console.log(err));
+
+server.listen(5500, () => console.log('server on port 5500'));
