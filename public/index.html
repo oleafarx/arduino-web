@@ -4,31 +4,10 @@
     <meta charset="utf-8">
     <title>Temperature with Nodejs</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style media="screen">
-    html, body {
-  height:100%;
-}
-body {
-  display:flex;
-  align-items:center;
-  background: #3498DB ;
-  justify-content: center;
-}
-.textContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  margin-right: 1em;
-}
-.text{
-  font-size: 32px;
-  color: white;
-}
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <table  class="row justify-content-center align-self-center">
+    <!-- <table  class="row justify-content-center align-self-center">
       <tr>
         <td>
           <div class="textContainer">
@@ -37,7 +16,7 @@ body {
         </td>
         <td>
           <div class="card">
-            <h1 id="temperature" class="display-1 p-4"></h1>
+            <h3 id="temperature" class="display-1 p-4">23.45 C°</h3>
           </div>
         </td>
       </tr>
@@ -49,11 +28,47 @@ body {
         </td>
         <td>
           <div class="card">
-            <h1 id="humedad" class="display-1 p-4"></h1>
+            <h3 id="humedad" class="display-1 p-4">19.22 C°</h3>
           </div>
         </td>
       </tr>
-    </table>
+    </table> -->
+
+    <header>
+      <div>
+        <img src="https://umg.edu.gt/miumg/sesion_files/logo_white.png" alt="Logo UMG" class="logo">
+      </div>
+      <p>
+        ASPERSOR DE RIEGO INTELIGENTE
+      </p>
+    </header>
+
+    <main>
+      <section class="card">
+        <div class="card-title">
+          <img src="https://www.svgrepo.com/show/43232/temperature.svg" alt="">
+          <p>Ambiente</p>
+        </div>
+        <div class="card-text">
+          <p id="temperature">31.57 °C</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-title">
+          <img src="https://www.svgrepo.com/show/43232/temperature.svg" alt="">
+          <p>Tierra</p>
+        </div>
+        <div class="card-text">
+          <p id="humedad">19.22 °C</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Elaborado por Estudiantes de 9° Semestre de Ingeniería | UMG Chiquimulilla</p>
+    </footer>
+    
 
     <script src="socket.io/socket.io.js" charset="utf-8"></script>
     <script src="main.js" charset="utf-8"></script>
